@@ -3,7 +3,7 @@ package cn.fzliang.MPNative
 import android.webkit.JavascriptInterface
 import android.widget.Toast
 
-class JSInterface (private val mContext: MainActivity, private val mpRenderEngine: MPRenderEngine) {
+class JSInterface(private val mContext: MainActivity, private val mpRenderEngine: MPRenderEngine) {
     @JavascriptInterface
     fun showToast(toast: String) {
         Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show()
@@ -11,13 +11,13 @@ class JSInterface (private val mContext: MainActivity, private val mpRenderEngin
 
     @JavascriptInterface
     fun render(id: String) {
-        mpRenderEngine.render(id);
+        mpRenderEngine.render(id)
         Toast.makeText(mContext, "mpNative", Toast.LENGTH_SHORT).show()
     }
 
     @JavascriptInterface
     fun createNode(id: String) {
-        mpRenderEngine.createNode(id);
+        mpRenderEngine.createNode(id)
     }
 
     @JavascriptInterface
@@ -64,6 +64,6 @@ class JSInterface (private val mContext: MainActivity, private val mpRenderEngin
 
     @JavascriptInterface
     fun updateText(id: String, text: String) {
-        mpRenderEngine.updateText(id, text);
+        mpRenderEngine.updateText(id, text)
     }
 }

@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         maven { url "https://jitpack.io" } // <----- Add this
     }
 }
-rootProject.name = "My Application"
+rootProject.name = "MPNative"
 include ':app'
